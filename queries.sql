@@ -100,10 +100,3 @@ LEFT JOIN Marks m
 LEFT JOIN Courses c
 	ON e.course_id=c.course_id
 GROUP BY s.student_id, s.studen_name, e.enroll_id, c.course_id,c.c_name;
-
--- Course toppers - Find the highest-performing student in each course using overall assessment percentage.
-
--- Above-average students - Find students whose overall assessment percentage is above the average percentage across all enrolments.
--- Department performance - Rank departments by average student-course percentage.
--- Data integrity - Try a duplicate email, invalid department ID, duplicate enrolment and marks above the maximum. Verify that each invalid operation fails.
--- Query optimization - Inspect the execution plan for a course-wise marks report. Determine whether indexes would help.
